@@ -1,6 +1,7 @@
 import React from "react";
 import { range } from "../../utils";
-function Guess({ letters }) {
+import { checkGuess } from "../../game-helpers";
+function Guess({ letters, answer }) {
   return (
     <p className="guess">
       {range(5).map((index) => (
